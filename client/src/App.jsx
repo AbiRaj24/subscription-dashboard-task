@@ -22,6 +22,8 @@ function AppContent() {
     dispatch(initTheme());
   }, [dispatch]);
 
+  
+ 
   return (
     <BrowserRouter>
       <div className="min-h-screen w-full bg-gray-50 dark:bg-gray-900">

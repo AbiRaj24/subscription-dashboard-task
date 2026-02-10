@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
   res.send("API running...");
 });
 
+
 app.use("/api/plans",planRoutes);
 app.use("/api/auth", authRoutes);
 

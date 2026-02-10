@@ -31,7 +31,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen  dark:from-gray-900 dark:to-gray-800">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
@@ -45,13 +45,13 @@ const Home = () => {
           <div className="mt-10 flex justify-center gap-4">
             <Link
               to="/register"
-              className="btn-blue text-lg px-8 py-3"
+              className="btn-blue text-lg px-8 py-3 border-4 rounded-md border-blue-600"
             >
               Get Started
             </Link>
             <Link
               to="/plans"
-              className="btn-secondary text-lg px-8 py-3"
+              className="btn-secondary text-lg px-8 py-3 border-4 rounded-md border-blue-600"
             >
               View Plans
             </Link>

@@ -225,7 +225,7 @@ const Dashboard = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Role</p>
-                <span className="inline-block mt-1 px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400">
+                <span className="inline-block mt-1 px-2 py-1 rounded-sm text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400">
                   {user?.role}
                 </span>
               </div>

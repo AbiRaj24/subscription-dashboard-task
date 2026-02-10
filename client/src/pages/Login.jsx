@@ -76,7 +76,9 @@ const Login = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className="input-field dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring-2 focus:ring-blue-500
+              dark:bg-gray-800 dark:border-gray-700 dark:text-white"
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
@@ -93,7 +95,9 @@ const Login = () => {
                 type="password"
                 autoComplete="current-password"
                 required
-                className="input-field dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring-2 focus:ring-blue-500
+              dark:bg-gray-800 dark:border-gray-700 dark:text-white"
                 placeholder="Enter your password"
                 value={formData.password}
                 onChange={handleChange}
@@ -105,7 +109,9 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full btn-blue"
+               className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg
+          font-medium hover:bg-blue-700 focus:outline-none
+          focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
             >
               {loading ? 'Signing in...' : 'Sign in'}
             </button>
