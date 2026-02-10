@@ -1,32 +1,30 @@
 
-#Sunscription Dashboard
+## Project Overview
 
-A full-stack subscription management dashboard where users can browse plans, subscribe, and manage their active subscriptions. Includes an admin view for monitoring all subscriptions.
+Subscription Dashboard is a full-stack SaaS-style application built to simulate real-world subscription management systems.
+
+The goal was to design a scalable architecture including authentication, protected routing, role-based access control, and subscription lifecycle management.
 
 
 Developer Information:
 
- Name: Abinaya G
- Email: abinayagovindarajan10@gmail.com
+ Name: Abinaya G,
+ Email: abinayagovindarajan10@gmail.com,
  github: https://github.com/AbiRaj24/subscription-dashboard-task.git
 
 
-#tech stacks:
+## Architecture
 
-##Frontend:
-- React (Vite)
-- Tailwind CSS
-- React Router
-- Redux(state management)
-- Axios
+Frontend:
+- React with Vite for fast development
+- Redux Toolkit for global auth and theme state
+- Protected routes using role-based authorization
 
-##Backend
-- Node.js
-- Express.js
-- PostgreSQL
-- Knex.js
-- JWT Authentication
-- Joi validation
+Backend:
+- REST API built with Express
+- JWT authentication with refresh token strategy
+- PostgreSQL with Knex query builder
+- Joi validation for request schema enforcement
 
 ---
 
@@ -42,8 +40,54 @@ Developer Information:
 
 ---
 
-##project structures##
+## Technical Decisions
 
+- Used Redux Toolkit instead of Context API for predictable auth state management.
+- Implemented role-based ProtectedRoute for admin-only pages.
+- Stored theme preference in localStorage for persistent dark mode.
+- Structured API services separately for scalability.
+
+## Challenges & Learnings
+
+- Handling token persistence securely across page refresh.
+- Managing dark/light theme toggle using Tailwind class strategy.
+- Structuring reusable API service layers.
+- Debugging Tailwind configuration issues between versions.
+
+## API Endpoints
+
+POST /auth/register
+POST /auth/login
+GET /plans
+POST /subscriptions
+GET /admin/subscriptions
+
+screenshots
+## Screenshots
+
+### Home Page
+![Home Page](./screenshots/Home.png)
+
+### Plans Page
+![Plans Page](./screenshots/plan.png)
+
+### User Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### theme toggle
+![theme](./screenshots/themetoggle.png)
+
+### login Page
+![login Page](./screenshots/login.png)
+
+### register Page
+![register Page](./screenshots/signup.png)
+
+
+
+
+
+##project structures##
 
 #folder
 
