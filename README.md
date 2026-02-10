@@ -62,7 +62,6 @@ GET /plans
 POST /subscriptions
 GET /admin/subscriptions
 
-screenshots
 ## Screenshots
 
 ### Home Page
@@ -87,16 +86,16 @@ screenshots
 
 
 
-##project structures##
+## project structure
 
-#folder
+## folder
 
 --subscription-dashboard-task/
        client/ # React frontend
        server/ # Node.js backend
 
 
-##backend Setup:
+## backend setup
 
 --cd server
 --npm install
@@ -113,7 +112,7 @@ screenshots
   
   "http://localhost:5000"
 
-##frontend
+## Frontend
 
 --cd client
 --npm install
@@ -123,7 +122,7 @@ screenshots
  "http://localhost:5173"
 
 
- ##notes
+ ## Notes
 
 - PostgreSQL must be running locally.
 - Admin role can be assigned by updating the user role directly in the database.
